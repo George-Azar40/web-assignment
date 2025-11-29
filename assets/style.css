@@ -48,10 +48,11 @@ a{
 }
 #home{
     width: 100%;
+    min-height: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    background-image: url("photoes/home\ backGround\ image.PNG");
 }
 .homeContainer {
     width: 80%;
@@ -64,6 +65,7 @@ a{
 }
 .homeImage{
     width: 50%;
+    mix-blend-mode: multiply;
 }
 .header{
     color: black;

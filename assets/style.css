@@ -31,7 +31,14 @@ a{
     color: black;
     text-transform: capitalize;
     font-size: larger;
-    
+    transition: color 0.5s ease;
+    -webkit-transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -ms-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+}
+.navLinks a:hover{
+    color: #00a8b5;
 }
 .searchAndFavorite span {
     font-size: 22px;

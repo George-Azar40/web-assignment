@@ -98,9 +98,30 @@ a{
     text-align: center;
     border: 1px solid #00a8b5;
     box-shadow: 0 0 20px rgba(0, 168, 181, 0.25);
-    border-radius: px;
+    border-radius:4 px;
+    -webkit-border-radius:4 px;
+    -moz-border-radius:4 px;
+    -ms-border-radius:4 px;
+    -o-border-radius:4 px;
+}
+#services .serviceBox{
+    background-color: #fff;
+    transition: background-color ease 1s;
+    -webkit-transition: background-color ease 1s;
+    -moz-transition: background-color ease 1s;
+    -ms-transition: background-color ease 1s;
+    -o-transition: background-color ease 1s;
+}
+.serviceBox img {
+    transition: opacity 0.5s ease;
+}
+.serviceBox:hover img {
+    opacity: 0.5;
 }
 #services .serviceBox .serviceHeadTitle{
     text-transform: capitalize;
     font-weight: bold;
+}
+#services .serviceBox:hover{
+    background-color: #00a8b5;
 }

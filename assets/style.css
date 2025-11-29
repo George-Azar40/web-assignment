@@ -87,3 +87,20 @@ a{
     border: none;
     text-transform: capitalize;
 }
+#services{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 100px;
+}
+.serviceBox{
+    width: 20%;
+    text-align: center;
+    border: 1px solid #00a8b5;
+    box-shadow: 0 0 20px rgba(0, 168, 181, 0.25);
+    border-radius: px;
+}
+#services .serviceBox .serviceHeadTitle{
+    text-transform: capitalize;
+    font-weight: bold;
+}

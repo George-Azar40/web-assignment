@@ -125,3 +125,39 @@ a{
 #services .serviceBox:hover{
     background-color: #00a8b5;
 }
+#about{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.aboutContainer{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.aboutPhoto{
+    width: 40%;
+}
+.aboutText{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.aboutText button {
+    width: auto ;
+    display: inline-block ;
+    align-self: flex-start ;
+    padding: 8px 18px;
+}
+.aboutText h2{
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+.aboutText p {
+    width: 90%;
+    text-align: justify;
+}

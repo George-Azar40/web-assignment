@@ -162,3 +162,50 @@ a{
     width: 90%;
     text-align: justify;
 }
+#featured{
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+.featuredContainer{
+    width: 95%;
+    margin-left: 50px;
+    display: flex;
+    gap: 40px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+}
+.featuredBox{
+    border: 1px solid #808080;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 10px;
+}
+.bookImg img{
+    height: 250px;
+    width: auto;
+}
+.featuredBox h2{
+    text-transform:capitalize;
+}
+.featuredBox .bookAuthor{
+    color: #808080;
+}
+.featuredBox .bookType{
+    color: #00a8b5;
+}
+.featuredBox .priceAfterDiscount{
+    text-decoration:line-through;
+}
+.featuredBox .btn{
+    background-color: #fff;
+    color: black;
+    border: 1px solid #00a8b5;
+}

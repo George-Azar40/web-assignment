@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+        font-family: 'Poppins', sans-serif;
+
+}
+body{
+    
+}
+.navBar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #fff;
+    padding-top: 10px;
+    box-shadow: 0 2px 10px rgba(0,168,181,0.5);
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+
+}
+.navLinks{
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    font-size: larger;
+    transition: color 0.5s ease;
+    -webkit-transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -ms-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+}
+.navLinks a:hover{
+    color: #00a8b5;
+}
+.searchAndFavorite span {
+    font-size: 22px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#home{
+    width: 100%;
+    min-height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("photoes/home\ backGround\ image.PNG");
+}
+.homeContainer {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.homeText{
+    width: 50%;
+}
+.homeImage{
+    width: 50%;
+    mix-blend-mode: multiply;
+}
+.header{
+    color: black;
+    font-size: xx-large;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.headerParagraph{
+    margin: 80px 0;
+}
+.headerSpan{
+    color: #00a8b5;
+    display: block;
+}
+.btn{
+    color: white;
+    background-color: #00a8b5;
+    padding: 8px 15px;
+    border: none;
+    text-transform: capitalize;
+}
+#services{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 100px;
+}
+.serviceBox{
+    width: 20%;
+    text-align: center;
+    border: 1px solid #00a8b5;
+    box-shadow: 0 0 20px rgba(0, 168, 181, 0.25);
+    border-radius:4 px;
+    -webkit-border-radius:4 px;
+    -moz-border-radius:4 px;
+    -ms-border-radius:4 px;
+    -o-border-radius:4 px;
+}
+#services .serviceBox{
+    background-color: #fff;
+    transition: background-color ease 1s;
+    -webkit-transition: background-color ease 1s;
+    -moz-transition: background-color ease 1s;
+    -ms-transition: background-color ease 1s;
+    -o-transition: background-color ease 1s;
+}
+.serviceBox img {
+    transition: opacity 0.5s ease;
+}
+.serviceBox:hover img {
+    opacity: 0.5;
+}
+#services .serviceBox .serviceHeadTitle{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+#services .serviceBox:hover{
+    background-color: #00a8b5;
+}
+#about{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.aboutContainer{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.aboutPhoto{
+    width: 40%;
+}
+.aboutText{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.aboutText button {
+    width: auto ;
+    display: inline-block ;
+    align-self: flex-start ;
+    padding: 8px 18px;
+}
+.aboutText h2{
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+.aboutText p {
+    width: 90%;
+    text-align: justify;
+}
+#featured{
+    margin-top: 100px;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    gap: 100px;
+}
+.featuredHeaderText{
+    text-transform: capitalize;
+
+}
+.featuredContainer{
+    width: 95%;
+    display: flex;
+    gap: 40px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    padding-bottom: 10px;
+}
+.featuredBox{
+    border: 1px solid #808080;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 10px;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+.featuredBox:hover{
+    border: 3px solid #00a8b5;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+
+}
+.bookImg img{
+    height: 250px;
+    width: auto;
+}
+.featuredBox h2{
+    text-transform:capitalize;
+}
+.featuredBox .bookAuthor{
+    color: #808080;
+}
+.featuredBox .bookType{
+    color: #00a8b5;
+}
+.featuredBox .priceAfterDiscount{
+    text-decoration:line-through;
+}
+.featuredBox .btn{
+    background-color: #fff;
+    color: black;
+    border: 1px solid #00a8b5;
+}
+
+
+
+.featuredContainer::-webkit-scrollbar {
+    height: 5px;
+}
+
+.featuredContainer::-webkit-scrollbar-track {
+    background: #e0e0e0; 
+    border-radius: 10px;
+}
+
+.featuredContainer::-webkit-scrollbar-thumb {
+    background: #00a8b5;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.featuredContainer::-webkit-scrollbar-thumb:hover {
+    background: #008a94; 
+}
+
+
+.arrivalHeaderText{
+    text-transform: capitalize;
+    text-align: center;
+}
+.arrivalsContainer {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    padding: 40px 0;
+}
+.arrivalBox {
+    border: 1px solid #b9b9b9;
+    border-radius: 5px;
+    padding: 5px 30px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s ease;
+    background: #fff;
+}
+.arrivalBox:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+.arrivalBoxImage {
+    width: 150px;
+    height: 250px;
+}
+.arrivalBoxImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.stars i {
+    color: #00a8b5;
+    font-size: 18px;
+    margin-right: 3px;
+}
+.arrivalBookTitle {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.btn:hover {
+    background-color: #008a95;
+}
+.arrivalBox .btn{
+    background-color: white;
+    color: black;
+    border: 1px solid #008a95;
+}

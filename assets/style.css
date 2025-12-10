@@ -4,6 +4,18 @@
         font-family: 'Poppins', sans-serif;
 
 }
+:root{
+    --white:#fff;
+    --black:#000;
+    --orange:
+    --blue: #00a8b5;
+    --featured_box:#808080;
+    --light_gray: #b9b9b9;
+    --review_card_bg:#49d4ea;
+    --review_card_shadow: #51e3f3;
+    --footer_section:#008080;
+
+}
 
     
 
@@ -11,7 +23,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: #fff;
+    background: var(--white);
     padding-top: 10px;
     box-shadow: 0 2px 10px rgba(0,168,181,0.5);
     position: sticky;
@@ -29,7 +41,7 @@ li{
 }
 a{
     text-decoration: none;
-    color: black;
+    color: var(--black);
     text-transform: capitalize;
     font-size: larger;
     transition: color 0.5s ease;
@@ -39,7 +51,7 @@ a{
     -o-transition: color 0.5s ease;
 }
 .navLinks a:hover{
-    color: #00a8b5;
+    color: var(--review_card_bg);
 }
 .searchAndFavorite span {
     font-size: 22px;
@@ -69,7 +81,7 @@ a{
     mix-blend-mode: multiply;
 }
 .header{
-    color: black;
+    color: var(--black);
     font-size: xx-large;
     font-weight: 600;
     text-transform: uppercase;
@@ -78,12 +90,12 @@ a{
     margin: 80px 0;
 }
 .headerSpan{
-    color: #00a8b5;
+    color: var(--review_card_bg);
     display: block;
 }
 .btn{
-    color: white;
-    background-color: #00a8b5;
+    color: var(--white);
+    background-color: var(--footer_section);
     padding: 8px 15px;
     border: none;
     text-transform: capitalize;
@@ -97,7 +109,7 @@ a{
 .serviceBox{
     width: 20%;
     text-align: center;
-    border: 1px solid #00a8b5;
+    border: 1px solid var(--review_card_shadow);
     box-shadow: 0 0 20px rgba(0, 168, 181, 0.25);
     border-radius:4 px;
     -webkit-border-radius:4 px;
@@ -106,7 +118,7 @@ a{
     -o-border-radius:4 px;
 }
 #services .serviceBox{
-    background-color: #fff;
+    background-color: var(--white);
     transition: background-color ease 1s;
     -webkit-transition: background-color ease 1s;
     -moz-transition: background-color ease 1s;
@@ -124,7 +136,7 @@ a{
     font-weight: bold;
 }
 #services .serviceBox:hover{
-    background-color: #00a8b5;
+    background-color: var(--review_card_bg);
 }
 #about{
     width: 100%;
@@ -187,7 +199,7 @@ a{
     padding-bottom: 10px;
 }
 .featuredBox{
-    border: 1px solid #808080;
+    border: 1px solid var(--featured_box);
     display: flex;
     flex: 0 0 auto;
     flex-direction: column;
@@ -202,7 +214,7 @@ a{
     -o-transition: 0.3s ease;
 }
 .featuredBox:hover{
-    border: 3px solid #00a8b5;
+    border: 3px solid var(--review_card_bg);
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 
 }
@@ -214,18 +226,18 @@ a{
     text-transform:capitalize;
 }
 .featuredBox .bookAuthor{
-    color: #808080;
+    color: var(--featured_box);
 }
 .featuredBox .bookType{
-    color: #00a8b5;
+    color: var(--review_card_bg);
 }
 .featuredBox .priceAfterDiscount{
     text-decoration:line-through;
 }
 .featuredBox .btn{
-    background-color: #fff;
-    color: black;
-    border: 1px solid #00a8b5;
+    background-color: var(--white);
+    color: var(--black);
+    border: 1px solid var(--review_card_bg);
 }
 
 
@@ -235,12 +247,12 @@ a{
 }
 
 .featuredContainer::-webkit-scrollbar-track {
-    background: #e0e0e0; 
+    background: var(--light_gray); 
     border-radius: 10px;
 }
 
 .featuredContainer::-webkit-scrollbar-thumb {
-    background: #00a8b5;
+    background: var(--review_card_shadow);
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -249,7 +261,7 @@ a{
 }
 
 .featuredContainer::-webkit-scrollbar-thumb:hover {
-    background: #008a94; 
+    background: var(--review_card_bg); 
 }
 
 
@@ -267,7 +279,7 @@ a{
     padding: 40px 0;
 }
 .arrivalBox {
-    border: 1px solid #b9b9b9;
+    border: 1px solid var(--light_gray);
     border-radius: 5px;
     padding: 5px 30px 15px;
     display: flex;
@@ -275,7 +287,7 @@ a{
     align-items: center;
     gap: 10px;
     transition: 0.3s ease;
-    background: #fff;
+    background: var(--white);
 }
 .arrivalBox:hover {
     transform: translateY(-5px);
@@ -291,7 +303,7 @@ a{
     object-fit: cover;
 }
 .stars i {
-    color: #00a8b5;
+    color: var(--review_card_bg);
     font-size: 18px;
     margin-right: 3px;
 }
@@ -300,12 +312,12 @@ a{
     text-transform: capitalize;
 }
 .btn:hover {
-    background-color: #008a95;
+    background-color: var(--review_card_bg);
 }
 .arrivalBox .btn{
-    background-color: white;
-    color: black;
-    border: 1px solid #008a95;
+    background-color: var(--white);
+    color: var(--black);
+    border: 1px solid var(--review_card_bg);
 }
 #reviews{
     text-align: center;
@@ -321,11 +333,11 @@ a{
     gap: 25px; padding: 0 40px; 
 }
 .review-card { width: 50%;
-     background: #fff;
-     border: 1px solid #49d4ea;
+     background: var(--white);
+     border: 1px solid var(--review_card_bg);
      padding: 25px;
      text-align: left;
-     box-shadow: 0px 10px 40px #51e3f3;
+     box-shadow: 0px 10px 40px var(--review_card_shadow);
      position: relative;
 }
 .card-top {
@@ -360,8 +372,8 @@ a{
      position: absolute;
        bottom: 100px; 
        left: 100px;
-       background-color: #00a8b5;  
-       color: white;
+       background-color: var(--footer_section);  
+       color: var(--white);
         padding: 10px 25px;
     font-size: 16px;
     text-decoration: none;
@@ -388,8 +400,8 @@ a{
 }
 .card-blog{
     width: 350px ;
-    background-color: #fff;
-    border: 1px solid #e6e6e6;
+    background-color: var(--white);
+    border: 1px solid var(--white);
     box-shadow: 0 12px 35px rgba(0,0,0,0.22);
    
 }
@@ -404,7 +416,7 @@ a{
     text-align: left;
 }
 .text h3 {
-    color:#00a6b2 ;
+    color:var(--review_card_shadow) ;
     font-size: 20px;
     margin-bottom: 10px;
 }
@@ -424,7 +436,7 @@ a{
 .icona i{
     font-size: 20px;
     cursor: pointer;
-    color: #00a6b2;
+    color: var(--review_card_shadow);
 }
 
 .footer {
@@ -481,14 +493,14 @@ a{
     border-radius: 20px;
     border: none;
     outline: none;
-    background-color: #dcdcdc;
+    background-color: var(--white);
 }
 
 .footer-section button {
     padding: 8px 25px;
-    background-color: teal;
+    background-color: var(--footer_section);
     border: none;
-    color: #fff;
+    color: var(--white);
     border-radius: 20px;
     cursor: pointer;
     margin-top: 12px;
@@ -500,10 +512,10 @@ a{
     font-size: 18px;
 }
 .smaily{
-    color:#00a6b2;
+    color:var(--footer_section);
 }
 .tex-color{
-    color:#00a6b2  ;
+    color:var(--footer_section)  ;
 }
 
 

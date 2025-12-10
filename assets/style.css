@@ -67,6 +67,11 @@ a{
     cursor: pointer;
     transition: 0.3s;
 }
+.hamburger {
+    font-size: 26px;
+    cursor: pointer;
+    display: none;
+}
 #home{
     width: 100%;
     min-height: 800px;
@@ -80,13 +85,18 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .homeText{
     width: 50%;
+        min-width: 300px;
+
 }
 .homeImage{
     width: 50%;
     mix-blend-mode: multiply;
+        min-width: 300px;
+
 }
 .header{
     color: var(--black);
@@ -158,9 +168,11 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .aboutPhoto{
     width: 40%;
+    
 }
 .aboutText{
     width: 40%;
@@ -358,6 +370,7 @@ a{
          height: 65px;
          border-radius: 50%;
  }
+ 
 .review-card h3 { 
     margin-top: 15px;
      font-size: 20px;
@@ -405,6 +418,7 @@ a{
     gap: 70px;
     margin: auto;
     max-width: 1200px;
+    flex-wrap: wrap;
 }
 .card-blog{
     width: 350px ;

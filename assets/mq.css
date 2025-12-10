@@ -1,0 +1,174 @@
+@media (max-width: 992px) {
+
+    /* Navbar */
+    .navBar {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    /* Home Section */
+    .homeContainer {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .homeText, 
+    .homeImage {
+        width: 100%;
+    }
+
+    /* About Section */
+    .aboutContainer {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .aboutPhoto,
+    .aboutText {
+        width: 100%;
+        text-align: center;
+    }
+
+    .aboutText button {
+        margin: auto;
+    }
+
+    /* Featured */
+    .featuredContainer {
+        width: 100%;
+    }
+
+    /* Reviews Cards */
+    .reviews-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .review-card {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    /* Navbar */
+    .navLinks {
+        display: none;
+    }
+
+    /* Home Section */
+    #home {
+        padding: 40px 0;
+    }
+
+    .header {
+        font-size: 32px;
+    }
+
+    /* Services */
+    #services {
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .serviceBox {
+        width: 45%;
+    }
+
+    /* Featured books */
+    .featuredBox {
+        padding: 10px;
+    }
+
+    /* Arrivals */
+    .arrivalsContainer {
+        gap: 20px;
+    }
+
+    .arrivalBox {
+        width: 45%;
+    }
+
+    /* Blog */
+    .card-blog {
+        width: 90%;
+    }
+
+    /* Footer */
+    .footer-con {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+     .navLinks {
+        display: none;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 70px;
+        right: 10px;
+        width: 200px;
+        padding: 15px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        border-radius: 10px;
+    }
+
+    .navLinks.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+    
+}
+
+@media (max-width: 576px) {
+
+    /* Home Text */
+    .header {
+        font-size: 28px;
+    }
+    .headerParagraph  {
+        margin: 30px 0;
+    }
+    .homeImage , .aboutPhoto {
+        width: 400px;
+        height: 400px;
+    }
+
+    .homeImage img , .aboutPhoto img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* مهم عشان الصورة ما تنقص */
+    }
+
+    /* Services */
+    .serviceBox {
+        width: 40%;
+    }
+
+    /* Arrivals */
+    .arrivalBox {
+        width: 40%;
+    }
+
+    /* Reviews */
+    .review-card {
+        width: 100%;
+    }
+
+    /* Blog */
+    .card-blog {
+        width: 100%;
+    }
+
+    /* Footer */
+    .footer-con {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}

@@ -347,11 +347,26 @@ a{
     line-height: 1.45;
      margin: 10px 0 15px;
 }
+.banneer-book {
+  position: relative;
+}
 
 .banneer-book img {
     width: 100%;
     height: auto;
     display: block;
+}
+.learn-btn {
+     position: absolute;
+       bottom: 100px; 
+       left: 100px;
+       background-color: #00a8b5;  
+       color: white;
+        padding: 10px 25px;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
 }
 #blog {
     padding: 50px 0;

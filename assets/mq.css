@@ -1,12 +1,10 @@
 @media (max-width: 992px) {
 
-    /* Navbar */
     .navBar {
         flex-direction: row;
         gap: 15px;
     }
 
-    /* Home Section */
     .homeContainer {
         flex-direction: column;
         text-align: center;
@@ -18,7 +16,6 @@
         width: 100%;
     }
 
-    /* About Section */
     .aboutContainer {
         flex-direction: column;
         gap: 40px;
@@ -34,12 +31,10 @@
         margin: auto;
     }
 
-    /* Featured */
     .featuredContainer {
         width: 100%;
     }
 
-    /* Reviews Cards */
     .reviews-container {
         flex-direction: column;
         gap: 40px;
@@ -53,12 +48,10 @@
 
 @media (max-width: 768px) {
 
-    /* Navbar */
     .navLinks {
         display: none;
     }
 
-    /* Home Section */
     #home {
         padding: 40px 0;
     }
@@ -67,7 +60,6 @@
         font-size: 32px;
     }
 
-    /* Services */
     #services {
         flex-wrap: wrap;
         gap: 20px;
@@ -79,12 +71,10 @@
         width: 45%;
     }
 
-    /* Featured books */
     .featuredBox {
         padding: 10px;
     }
 
-    /* Arrivals */
     .arrivalsContainer {
         gap: 20px;
     }
@@ -93,12 +83,10 @@
         width: 45%;
     }
 
-    /* Blog */
     .card-blog {
         width: 90%;
     }
 
-    /* Footer */
     .footer-con {
         grid-template-columns: 1fr 1fr;
         gap: 20px;
@@ -128,7 +116,6 @@
 
 @media (max-width: 576px) {
 
-    /* Home Text */
     .header {
         font-size: 28px;
     }
@@ -143,30 +130,25 @@
     .homeImage img , .aboutPhoto img {
         width: 100%;
         height: 100%;
-        object-fit: contain; /* مهم عشان الصورة ما تنقص */
+        object-fit: contain; 
     }
 
-    /* Services */
     .serviceBox {
         width: 40%;
     }
 
-    /* Arrivals */
     .arrivalBox {
         width: 40%;
     }
 
-    /* Reviews */
     .review-card {
         width: 100%;
     }
 
-    /* Blog */
     .card-blog {
         width: 100%;
     }
 
-    /* Footer */
     .footer-con {
         grid-template-columns: 1fr;
         text-align: center;

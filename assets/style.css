@@ -445,17 +445,17 @@ a{
 
 .footer-section ul li {
     margin-bottom: 5px;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .footer-section p {
-    font-size: 17px;
+    font-size: 13px;
     line-height: 1.5;
     margin-bottom: 10px;
 }
 
 .iconsss i {
-    font-size: 20px;
+    font-size: 13px;
     margin-right: 12px;
     cursor: pointer;
 }
@@ -484,7 +484,11 @@ a{
     margin-top: 30px;
     font-size: 18px;
 }
-
-
+.smaily{
+    color:#00a6b2;
+}
+.tex-color{
+    color:#00a6b2  ;
+}
 
 

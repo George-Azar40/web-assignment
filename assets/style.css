@@ -364,6 +364,7 @@ a{
     margin-bottom: 40px ;
 }
 .blog-body{
+    
     display: flex;
     justify-content: center;
     gap: 70px;
@@ -397,7 +398,22 @@ a{
     margin-bottom: 15px;
     line-height: 1.5;
 
-}.footer {
+}
+.icona{
+    margin-top: 1px;
+    padding: 0 9px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icona i{
+    font-size: 20px;
+    cursor: pointer;
+   
+    color: #00a6b2;
+}
+
+.footer {
     background-color: #e5e5e5;
     padding: 40px 0 20px;
     font-family: Arial, sans-serif;
